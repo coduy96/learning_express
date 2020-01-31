@@ -2,4 +2,14 @@ html
     head
         link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
     body
-        block header
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarTogglerDemo01', aria-controls='navbarTogglerDemo01', aria-expanded='false', aria-label='Toggle navigation')
+            #navbarTogglerDemo01.collapse.navbar-collapse
+                a.navbar-brand(href='#') Happy Land
+                ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+                    li.nav-item
+                        a.nav-link(href='/') Home 
+                    li.nav-item
+                        a.nav-link(href='/users') Users
+        .container
+            block header

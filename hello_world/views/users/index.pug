@@ -8,8 +8,16 @@ block header
         input(type="text" name="q")
         button(class="btn btn-primary ml-2") Search
 
-    ul
+    table.table
+        tr
+            th Name
+            th Phone
+            th Actions
+            
         each user in users
-            li= user.name
-            a(href="/users/"+ user.id) View detail
+            tr
+                td= user.name
+                td= user.phone
+                td
+                    a(href="/users/"+ user.id) View detail
 
