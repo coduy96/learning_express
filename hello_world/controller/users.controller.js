@@ -29,19 +29,7 @@ module.exports.getCreate = function(request, response) {
 
 module.exports.postCreate = function(request, response) {
   request.body.id = shortid.generate();
-  var errors = [];
-
-  if(!request.body.name){
-    errors.push('Name is required.');
-  }
-  if(!request.body.phone){
-    errors.push('Phone is required. ');
-  }
-  if(errors.length){
-    response.render('users/create',{errors:errors, values:request.body});
-    return;
-  }
-
+  console.log(response.locals);
   db.get("users")
     .push(request.body)
     .write();
@@ -54,6 +42,5 @@ module.exports.getId = function(request, response) {
     .get("users")
     .find({ id: id })
     .value();
-
   response.render("users/view", { user: user });
 };
