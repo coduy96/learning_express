@@ -15,7 +15,7 @@ module.exports.postLogin = function(request, response, next){
         response.render('../views/auth/login.pug',{errors:['Wrong password']});
         return;
     }
-    response.cookie('userid', user.id);
+    response.cookie('userid', user.id,{ signed: true });
     response.redirect('/users');
     console.log(user);
 }
