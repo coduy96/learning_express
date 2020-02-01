@@ -18,6 +18,7 @@ app.use(bodyParse.json());
 app.use(bodyParse.urlencoded({ extended: true }));
 app.use('/users', authMiddlewares.authRequire, userRoute);
 app.use('/auth', userAuth);
+app.use(express.static('uploads')); //set static folder for getting file
 app.get("/", function(request, response) {
   response.render("index", {
     username: "coduy96"

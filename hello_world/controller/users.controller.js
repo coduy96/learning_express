@@ -27,6 +27,9 @@ module.exports.getCreate = function(request, response) {
 };
 
 module.exports.postCreate = function(request, response) {
+  var splitUrl = request.file.path.split("/")
+  var spliceUrl = splitUrl.slice(1).join('')
+  request.body.avatar = spliceUrl;
   request.body.id = shortid.generate();
   console.log(response.locals);
   db.get("users")

@@ -1,16 +1,6 @@
 {
   "users": [
     {
-      "name": "Tony Stark",
-      "phone": "0977807654",
-      "id": "R1B2zRs2"
-    },
-    {
-      "name": "Thanos",
-      "phone": "0000000000",
-      "id": "I4rERXMc"
-    },
-    {
       "name": "Duy",
       "phone": "0981655041",
       "id": "02PTOvvE",
@@ -18,24 +8,16 @@
       "password": "123456"
     },
     {
-      "name": "Mia",
-      "phone": "1234567890",
-      "id": "RdeC3BXM"
+      "name": "Tony Stark",
+      "phone": "0909090909",
+      "avatar": "bca41c9c4c87d6927069092f2c4faab1",
+      "id": "N-iE5eE5"
     },
     {
-      "name": "Steve",
-      "phone": "0987654531",
-      "id": "8zfQZJrn"
-    },
-    {
-      "name": "Cook",
-      "phone": "0982736541",
-      "id": "TUokI6aY"
-    },
-    {
-      "name": "Cruise",
-      "phone": "0987263516",
-      "id": "9WKdTq_G"
+      "name": "Thanos",
+      "phone": "0987655031",
+      "avatar": "93db7e3705ca4d79225a07ca7ff3aea1",
+      "id": "xFIgu0vA"
     }
   ]
 }
